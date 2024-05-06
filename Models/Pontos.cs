@@ -19,6 +19,6 @@ namespace TPC_Challenge.Models
         public DateOnly DataExpiracao { get; set; }
         [Required]
         [Column("Status_Pontos")]
-        public bool StatusPontos { get; set; }
+        public char StatusPontos { get; set; }
     }
 }

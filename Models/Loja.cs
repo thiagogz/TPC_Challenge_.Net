@@ -25,6 +25,6 @@ namespace TPC_Challenge.Models
         public string CepLoja { get; set; }
         [Required]
         [Column("Loja_Ativa")]
-        public bool LojaAtiva { get; set; }
+        public char LojaAtiva { get; set; }
     }
 }

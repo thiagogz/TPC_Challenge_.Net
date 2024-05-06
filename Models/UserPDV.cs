@@ -26,6 +26,6 @@ namespace TPC_Challenge.Models
         public DateOnly DataRegistro { get; set; }
         [Required]
         [Column("Cadastro_Ativo")]
-        public bool CadastroAtivo { get; set; }
+        public char CadastroAtivo { get; set; }
     }
 }

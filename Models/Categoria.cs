@@ -16,6 +16,6 @@ namespace TPC_Challenge.Models
         public string DescricaoCategoria { get; set; }
         [Required]
         [Column("Ativo")]
-        public bool Ativo { get; set; }
+        public char Ativo { get; set; }
     }
 }

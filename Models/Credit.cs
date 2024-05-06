@@ -10,7 +10,7 @@ namespace TPC_Challenge.Models
         public int CreditID { get; set; }
         [Required]
         [Column("Valor_do_Credito")]
-        public Decimal ValorCredito { get; set; }
+        public long ValorCredito { get; set; }
         [Required]
         [Column("Data_do_Credito")]
         public DateOnly DataCredito { get; set; }
@@ -19,6 +19,6 @@ namespace TPC_Challenge.Models
         public DateOnly DataExpiracao { get; set; }
         [Required]
         [Column("Status_do_Credito")]
-        public string StatusCredito { get; set; }
+        public char StatusCredito { get; set; }
     }
 }

@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TPC_Challenge.Models
 {
-    [Table("Tabela_Produtos")]
+    [Table("Tabela_Produto")]
     public class Produtos
     {
         [Key]
-        public int ProdutosID { get; set; }
+        public int ProdutoID { get; set; }
         public ICollection<Loja> Loja { get; set; }
         public ICollection<Categoria> Categoria { get; set; }
         [Required]
@@ -18,9 +18,9 @@ namespace TPC_Challenge.Models
         public string DescricaoProduto { get; set; }
         [Required]
         [Column("Valor_do_Produto")]
-        public Decimal ValorProduto { get; set; }
+        public long ValorProduto { get; set; }
         [Required]
         [Column("Disponibilidade_do_Produto")]
-        public bool DisponibilidadeProduto { get; set; }
+        public char DisponibilidadeProduto { get; set; }
     }
 }

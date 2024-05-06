@@ -1,7 +1,17 @@
+global using Microsoft.EntityFrameworkCore;
+global using TPC_Challenge.Data;
+global using TPC_Challenge.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DataContext>(o =>
+{
+    o.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
+});
 
 var app = builder.Build();
 

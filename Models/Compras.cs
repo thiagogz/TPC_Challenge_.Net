@@ -12,7 +12,7 @@ namespace TPC_Challenge.Models
         public ICollection<Users> Users { get; set; }
         [Required]
         [Column("Valor_da_Compra")]
-        public Decimal ValorCompra { get; set; }
+        public long ValorCompra { get; set; }
         [Required]
         [Column("Data_da_Compra")]
         public DateOnly DataCompra { get; set; }
