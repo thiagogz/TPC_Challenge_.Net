@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge\\TPC_Challenge.csproj": {}
+    "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge_.Net\\TPC_Challenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge\\TPC_Challenge.csproj": {
+    "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge_.Net\\TPC_Challenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge\\TPC_Challenge.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge_.Net\\TPC_Challenge.csproj",
         "projectName": "TPC_Challenge",
-        "projectPath": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge\\TPC_Challenge.csproj",
+        "projectPath": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge_.Net\\TPC_Challenge.csproj",
         "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge\\obj\\",
+        "outputPath": "C:\\Users\\Thiago\\source\\repos\\TPC_Challenge_.Net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,21 +45,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",

@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="login-page" style="background-color:#0E1015">
+    <div class="login-box">
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Faça seu login</p>
+
+                <form asp-controller="User" asp-action="EfetuarLogin" method="post">
+                    <div class="input-group mb-3">
+                        <input name="EmailUsuario" type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input name="SenhaUsuario" type="password" class="form-control" placeholder="Senha">
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Logar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <p class="mb-1">
+                    <a href="forgot-password.html">Esqueci minha senha</a>
+                </p>
+                <p class="mb-0">
+                    <a asp-controller="User" asp-action="CadastroPage" class="text-center">Cadastrar</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

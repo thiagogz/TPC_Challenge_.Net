@@ -3,6 +3,14 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bem-vindo à LesSoft</h1>
+    <p>Seu portal para as informações de pontos e créditos.</p>
+    <div>
+        <p>Já tem um cadastro?</p>
+        <button type="submit" class="btn btn-primary btn-block"><a asp-controller="User" asp-action="LoginPage" class="text-center" style="color: #fff">Fazer login</a></button>
+    </div>
+    <div>
+        <p>Ainda não se cadastrou?</p>
+        <button type="submit" class="btn btn-primary btn-block"><a asp-controller="User" asp-action="CadastroPage" class="text-center" style="color: #fff">Cadastrar</a></button>
+    </div>
 </div>

@@ -12,15 +12,15 @@ using TPC_Challenge.Data;
 namespace TPC_Challenge.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240506031401_TPC_Challenge")]
-    partial class TPC_Challenge
+    [Migration("20240520033557_tpc")]
+    partial class tpc
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("ProductVersion", "8.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             OracleModelBuilderExtensions.UseIdentityColumns(modelBuilder);

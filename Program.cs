@@ -13,6 +13,14 @@ builder.Services.AddDbContext<DataContext>(o =>
     o.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
 });
 
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = "TPC.Session";
+    options.IdleTimeout = TimeSpan.FromHours(1);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

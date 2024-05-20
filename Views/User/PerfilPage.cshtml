@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<section class="content" style="padding-top: 1vh">
+    <h1>Perfil de @ViewBag.User.NomeUsuario</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-primary card-outline">
+                    <div class="card-body box-profile">
+                        <h3 class="profile-username text-center">@ViewBag.User.NomeUsuario @ViewBag.User.SobrenomeUsuario</h3>
+                        <a href="#settings" class="btn btn-primary button-edit-profile" data-toggle="tab" style="display: flex; justify-content: center; align-items: center;"><b>Editar Perfil</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body" style="display: flex; justify-content: space-evenly;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <h3>Pontos disponíveis:</h3>
+                            <p style="border: 1px solid rgba(0, 0, 0, .125); border-radius: .25rem; padding: 0.25rem .75rem; margin-bottom: 0;">@ViewBag.Pontos.ValorPontos pontos</p>
+                            <p style="font-size: 0.5rem;">* Válidos até @ViewBag.Pontos.DataExpiracao</p>
+                            <p><a class="nav-link text-dark" asp-area="" asp-controller="Pontos" asp-action="Pontos">View - Cadastrar Pontos</a></p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <h3>Créditos disponíveis:</h3>
+                            <p style="border: 1px solid rgba(0, 0, 0, .125); border-radius: .25rem; padding: 0.25rem .75rem; margin-bottom: 0;">R$@ViewBag.Credit.ValorCredito,00 crédito</p>
+                            <p style="font-size: 0.5rem;">* Válidos até @ViewBag.Credit.DataExpiracao</p>
+                            <p><a class="nav-link text-dark" asp-area="" asp-controller="Credit" asp-action="Credit">View - Cadastrar Créditos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

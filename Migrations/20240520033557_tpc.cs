@@ -5,7 +5,7 @@
 namespace TPC_Challenge.Migrations
 {
     /// <inheritdoc />
-    public partial class TPC_Challenge : Migration
+    public partial class tpc : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
