@@ -70,6 +70,36 @@ namespace TPC_Challenge.Controllers
             return RedirectToAction("PerfilPage", userLogin);
         }
 
+        public IActionResult UpdatePerfil(int id, UpdateDTO request)
+        {
+            var getUser = _dataContext.Users.Find(id);
+
+            getUser.NomeUsuario = request.NomeUsuario != null ? request.NomeUsuario : getUser.NomeUsuario;
+            getUser.SobrenomeUsuario = request.SobrenomeUsuario != null ? request.SobrenomeUsuario : getUser.SobrenomeUsuario;
+            getUser.EmailUsuario = request.EmailUsuario != null ? request.EmailUsuario : getUser.EmailUsuario;
+            getUser.SenhaUsuario = request.SenhaUsuario != null ? request.SenhaUsuario : getUser.SenhaUsuario;
+            getUser.TelefoneUsuario = request.TelefoneUsuario != null ? request.TelefoneUsuario : getUser.TelefoneUsuario;
+            getUser.EnderecoUsuario = request.EnderecoUsuario != null ? request.EnderecoUsuario : getUser.EnderecoUsuario;
+            getUser.NumeroEndereco = (int)(request.NumeroEndereco != null ? request.NumeroEndereco : getUser.NumeroEndereco);
+            getUser.ComplementoEndereco = request.ComplementoEndereco != null ? request.ComplementoEndereco : getUser.ComplementoEndereco;
+
+            _dataContext.Users.Update(getUser);
+            _dataContext.SaveChanges();
+
+            return RedirectToAction("PerfilPage");
+        }
+
+        public IActionResult DeletePerfil(int id)
+        {
+            var getUser = _dataContext.Users.Find(id);
+            getUser.CadastroAtivo = 'N';
+
+            _dataContext.Users.Update(getUser);
+            _dataContext.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

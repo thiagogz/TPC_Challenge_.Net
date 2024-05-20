@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPC_Challenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3095d131420f0886768abb9fa51ae557c52561f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb13a6af38d6e5104acb6cefaae02a21ab53ebd5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPC_Challenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPC_Challenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
